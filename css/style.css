@@ -1,0 +1,252 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@300&family=Inter+Tight&family=Meow+Script&family=Roboto&family=Sanchez&display=swap');
+
+body{
+    margin:0;
+
+} 
+
+
+/* HEADER AREA */
+.header-area{
+    background-color: rgba(243,198,179,255);
+    position: sticky;
+    top: 0;  
+}   
+
+.nav-link{
+    font-size: 15px;
+    color: gray;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+    color: white;
+   
+}
+
+
+
+/* HOME SECTION */
+.top-container{
+    height: 100vh;
+    width:100%;
+    font-family: 'Sanchez', serif;
+    background-image: url(https://i.pinimg.com/564x/68/37/b3/6837b3950b9af86553ac888763e3c9ef.jpg);
+    background-size: cover;
+}
+
+.name{
+    background-color: rgba(253,132,121,255);
+    color: white;
+    font-family: 'Dosis', sans-serif;
+}
+
+
+.btncontact{
+    font-family: 'Inter Tight', sans-serif;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(253,132,121,255);
+    color: white;
+    }
+
+     
+    
+.btncontact:hover{
+    background-color: gray;
+}
+
+
+/* ABOUT SECTION */
+.about-container{
+    font-family: 'Sanchez', serif;
+    width:100%;
+}
+
+.about-container p{
+font-size:small;
+}
+
+.about-container .signature{
+    font-family: 'Meow Script', cursive;
+    font-size: 50px;
+    text-align: right;  
+}
+
+.btn-cv{
+    font-family: 'Inter Tight', sans-serif;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(253,132,121,255);
+    color: white;
+    padding: 5px;      
+}
+
+.btn-cv:hover{
+    background-color: gray;
+}
+
+.skills span:hover{
+    color: gray;
+    }
+    
+
+/* PORTFOLIO SECTION*/
+
+.portfolio-container{
+    font-family: 'Sanchez', serif;
+    width:100%;
+}
+
+
+.project-container .project-preview{
+    background-color: beige;
+    color:  rgb(26, 35, 63);
+    width:250px;
+    height:auto;
+    border-radius: 20px;
+}
+
+.project-cover{
+    width: 100%;
+    height: 190px;
+    border-radius: 20px 20px 0 0;
+}
+
+.project-info{
+font-family: 'Inter Tight', sans-serif;
+}
+
+
+.project-info p{
+    text-align: center;
+    font-size: medium;
+}
+
+.btn-visit {
+    background-color: rgba(243,198,179,255); 
+    color: rgb(96, 83, 83);
+    text-decoration:none;
+    font-size: smaller;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+}
+
+.btn-visit:hover{
+    background-color: rgba(136, 148, 139, 0.724);
+    color: rgb(96, 83, 83);
+}
+
+
+
+/* CONTACT SECTION */
+.contact-container{
+    width:100%;
+}
+
+.pic{
+    height: 300px;
+    width: 300px;
+}
+
+.contact-us{
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.second a{
+    color: rgba(253,132,121,255);
+}
+
+
+.second a:hover{
+    color: gray;
+}
+
+.second span{
+    color: rgba(253,132,121,255);
+}
+
+
+.second span:hover{
+    color: gray;
+}
+
+
+#message{
+    font-family: 'Dosis', sans-serif;
+    border-color: pink;
+    border-style: solid;
+    border-width: 2px;
+}
+
+
+
+
+.formdetails{
+    color: black;
+    padding: 20px;
+    margin: 50px; 
+    height: auto;
+    border-radius: 30px;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: small;
+    width: auto;
+}
+
+
+.first span{
+    font-family: 'Sanchez', serif;
+    text-align: center;
+    font-size:xx-large;
+    color: black;
+}
+
+.first p{
+    text-align: center;
+}
+
+
+.second {
+    width:280px;
+    height: 400px;
+}
+
+
+.input-field {
+    padding: 5px;
+    width: 300px;
+    margin: 5px;
+    border-radius: 10px;
+    border-color: pink;
+    border-style:solid;
+    font-family: 'Dosis', sans-serif;
+    font-size: small;   
+    }
+
+
+.btnmessage{
+font-family: 'Inter Tight', sans-serif;
+border: none;
+border-radius: 20px;
+background-color: rgba(253,132,121,255);
+color: white;
+padding: 5px;
+    
+}
+
+.btnmessage:hover{
+background-color: gray;
+
+}
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: rgba(243,198,179,255);
+    font-size: small;
+}
+
