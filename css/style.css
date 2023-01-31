@@ -3,27 +3,79 @@
 
 body{
     margin:0;
-
 } 
 
 
-/* HEADER AREA */
-.header-area{
+/* NAVIGATION */
+
+header{
     background-color: rgba(243,198,179,255);
-    position: sticky;
-    top: 0;  
-}   
-
-.nav-link{
-    font-size: 15px;
-    color: gray;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 
-.nav-link:hover{
-    text-decoration: underline;
+#nav-group{
+    margin-top: 10px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+header ul{ 
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+header ul li{
+    font-family: 'Roboto Slab', serif;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    text-decoration: none;
+    color:gray;
+    letter-spacing: 0.2em ;
+    }
+
+
+header ul li a:hover{
     color: white;
-   
+    }
+
+
+header ul li a::before {
+    content:'';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin:right;
 }
+
+
+header ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin:left;
+}
+
+
+#menuToggle{
+    position: relative;  
+    display: none;
+    margin-left: 15px;
+}
+
+
+
 
 
 
@@ -65,7 +117,7 @@ body{
 }
 
 .about-container p{
-font-size:small;
+    font-size:small;
 }
 
 .about-container .signature{
@@ -226,17 +278,17 @@ font-family: 'Inter Tight', sans-serif;
 
 
 .btnmessage{
-font-family: 'Inter Tight', sans-serif;
-border: none;
-border-radius: 20px;
-background-color: rgba(253,132,121,255);
-color: white;
-padding: 5px;
+    font-family: 'Inter Tight', sans-serif;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(253,132,121,255);
+    color: white;
+    padding: 5px;
     
 }
 
 .btnmessage:hover{
-background-color: gray;
+    background-color: gray;
 
 }
 
@@ -244,9 +296,53 @@ background-color: gray;
 
 .footer {
     width: 100%;
-    height: auto;
+    /* height: auto; */
     text-align: center;
     background-color: rgba(243,198,179,255);
     font-size: small;
 }
 
+
+/* RESPONSIVE */
+
+@media (max-width: 800px){
+    
+    /* NAVIGATION */
+    #menuToggle{
+        position: absolute;
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+        transform: translate(30px);
+        z-index: 10;
+        left: 0;
+        color: rgb(240, 241, 240);
+        padding-top: 10px;
+    }
+    
+    header .navigation{
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        left:100%;
+    }
+
+
+    header.active .navigation{
+        top:50px;
+        opacity: 1;
+        visibility: visible;
+        left:0;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(243,198,179,255);
+        width: 100%;
+        height: calc (100vh - 80px);
+        padding: 40px;
+    }
+
+    header.active .navigation li a {
+       font-size: 1.25em; 
+    }
+
+}
